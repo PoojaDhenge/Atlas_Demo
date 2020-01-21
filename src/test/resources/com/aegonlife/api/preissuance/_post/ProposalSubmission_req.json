@@ -41,7 +41,7 @@
         "contactName": "XYZ  ABC"
     },
         "paymentInfo": {
-        	 "transactionId": ${transactionId},
+        	 "transactionId":${transactionId},
         "siOpted": true,
         "vendor":"RAZORPAY",
         "paymentMode":"CASH"
