@@ -21,8 +21,8 @@ public class FirstcryStepdef extends CucumberRunner{
 	@Given("^launch the application$")
 	public boolean startMethod() throws Exception {
 		FirstCryPageBase user = initPage(getDriver(), FirstCryPageBase.class);
-		user=new FirstcryPage(getDriver());
-		user.open();
+		//user=new FirstcryPage(getDriver());
+		//user.open();
 		return user.isPageOpened();
 		
 	}

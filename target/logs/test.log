@@ -1,3209 +1,4 @@
-2020-01-23 10:44:21 CarinaListener [INFO] 
-============= Test configuration =============
-url=https://qeeper.herokuapp.com/
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=chrome
-browser_version=*
-browser_language=
-selenium_host=http://localhost:5000/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://localhost:5000/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=com.solvd.carinademoapplication
-capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
-capabilities.automationName=uiautomator2
-capabilities.app=src/main/resources/carinademoexample.apk
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-================================================
-
-2020-01-23 10:44:21 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 10:44:21 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 10:44:21 Messager [INFO]  TEST [Default test - feature] STARTED at [10:44:21 2020-01-23]
-2020-01-23 10:44:25 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/authenticate
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:
-{
-    "password": "admin",
-    "username": "admin"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:14:23 GMT
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0Mjg2M30.TF29zhZl4-GrWLRTJnJG9lmsmcBuzHXqVyXDmyU-PiZ8JtCbewAZC8CTBBxHiIBW4Yf0LITwlY8Wtlx1aGwcbA
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0Mjg2M30.TF29zhZl4-GrWLRTJnJG9lmsmcBuzHXqVyXDmyU-PiZ8JtCbewAZC8CTBBxHiIBW4Yf0LITwlY8Wtlx1aGwcbA"
-}
-
-2020-01-23 10:44:26 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 10:44:28 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0Mjg2NX0.wAcocl8A-N8xAk6tG_Jlkl4tk9oPOvGLV-_WXzmAZsW89UfQoTso4fvMVqIL1pl6ep01yFMCWgQNMPLREho0cw
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0Mjg2NX0.wAcocl8A-N8xAk6tG_Jlkl4tk9oPOvGLV-_WXzmAZsW89UfQoTso4fvMVqIL1pl6ep01yFMCWgQNMPLREho0cw
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1399
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:14:26 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1399
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1399,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 10:44:29 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 10:44:29 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0Mjg2N30.PApzl9_QkB6cGdXvgkgbxPOn94mnp3i6GgD5S0XxQUaftezVElX4gdAQx8R-iras32RXhmGEp6B5UgbGHLhvrQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0Mjg2N30.PApzl9_QkB6cGdXvgkgbxPOn94mnp3i6GgD5S0XxQUaftezVElX4gdAQx8R-iras32RXhmGEp6B5UgbGHLhvrQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1400
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:14:28 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1400
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1400,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 10:44:30 Messager [ERROR]  TEST [Default test - feature] FAILED at [10:44:30 2020-01-23] - java.lang.IllegalArgumentException: No enum constant com.qaprosoft.carina.core.foundation.api.http.HttpMethodType.
-
-cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 10:44:30 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 10:44:30 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 10:44:32 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 10:44:32 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579756461587/9bec00b3-02a0-4db4-86ea-574226867e9a/test.log]
-2020-01-23 10:51:15 CarinaListener [INFO] 
-============= Test configuration =============
-url=https://qeeper.herokuapp.com/
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=chrome
-browser_version=*
-browser_language=
-selenium_host=http://localhost:5000/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://localhost:5000/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=com.solvd.carinademoapplication
-capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
-capabilities.automationName=uiautomator2
-capabilities.app=src/main/resources/carinademoexample.apk
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-================================================
-
-2020-01-23 10:51:15 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 10:51:15 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 10:51:15 Messager [INFO]  TEST [Default test - feature] STARTED at [10:51:15 2020-01-23]
-2020-01-23 10:51:19 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/authenticate
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:
-{
-    "password": "admin",
-    "username": "admin"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:21:17 GMT
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0MzI3N30.espFp844kdx69KnqwmigFrjB-21mBlRpRnBwmOWaUS2ah1yUiun1WaBCLFTpzz659ih2_9awvFbLWfaiUWpq2Q
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0MzI3N30.espFp844kdx69KnqwmigFrjB-21mBlRpRnBwmOWaUS2ah1yUiun1WaBCLFTpzz659ih2_9awvFbLWfaiUWpq2Q"
-}
-
-2020-01-23 10:51:20 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 10:51:21 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0MzI3OX0.5ESUkoYX_U3oM5cWWOawgvjhjxCgf_ktwOLinQjPgL0jsagQBF7lGTNEGtSXrhPvK77nh-l1oriq6UcQfQi1RQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0MzI3OX0.5ESUkoYX_U3oM5cWWOawgvjhjxCgf_ktwOLinQjPgL0jsagQBF7lGTNEGtSXrhPvK77nh-l1oriq6UcQfQi1RQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1408
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:21:20 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1408
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1408,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 10:51:23 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 10:51:24 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0MzI4MX0.bDXSWVp_z3SfAvb7TF0NIOcUMAOSEPCD1f5juqk-moIcWe4gpXEImRghHAlD10uAC_sEitsWZfq4v-vHoSMzgA
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0MzI4MX0.bDXSWVp_z3SfAvb7TF0NIOcUMAOSEPCD1f5juqk-moIcWe4gpXEImRghHAlD10uAC_sEitsWZfq4v-vHoSMzgA
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1409
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:21:23 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1409
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1409,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 10:51:25 AbstractApiMethod [INFO] Request method:	GET
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts/com.qk.carina.demo.api.GetAcc%40724b939e
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer {"id":1409,"dateOfOpening":null,"openedBy":"Test","customerId":"1234","accountNumber":"123456789","loginId":"Test","loginPassword":"Test","email":"test@test.com","phone":"9833653536","bankAccountType":"SAVING","chequeBookIssued":true,"accountBalance":5.0,"balanceCheckedOn":null,"minimumBalance":3.0,"passwordGetsExpired":false,"expirationPeriodDays":13,"passwordUpdatedOn":null,"remarks":"Test","accountStatus":"ACTIVE","multipleSessionAllowed":true,"projectName":"Sample","projectCode":"123456","requestedOn":null,"requestedBy":"Test","accountHolderId":3,"accountHolderName":null,"bankBranchId":1,"bankBranchLocation":null,"mobileNumberMappedId":1,"mobileNumberMappedNumber":null,"parentAccountId":1,"bankAccountGroupId":null,"bankAccountGroupName":null}
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:			<none>
-HTTP/1.1 401 Unauthorized
-Server: Cowboy
-Connection: close
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:21:24 GMT
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/problem+json
-Via: 1.1 vegur
-
-{
-    "type": "https://www.jhipster.tech/problem/problem-with-message",
-    "title": "Unauthorized",
-    "status": 401,
-    "detail": "Full authentication is required to access this resource",
-    "path": "/api/bank-accounts/com.qk.carina.demo.api.GetAcc%40724b939e",
-    "message": "error.http.401"
-}
-
-2020-01-23 10:51:25 Messager [INFO]  TEST [Default test - feature] PASSED at [10:51:25 2020-01-23]
-2020-01-23 10:51:25 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 10:51:25 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 10:51:27 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 10:51:27 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579756875541/74a129df-6569-4075-870b-925517467bc9/test.log]
-2020-01-23 11:26:01 CarinaListener [INFO] 
-============= Test configuration =============
-url=https://qeeper.herokuapp.com/
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=chrome
-browser_version=*
-browser_language=
-selenium_host=http://localhost:5000/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://localhost:5000/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=com.solvd.carinademoapplication
-capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
-capabilities.automationName=uiautomator2
-capabilities.app=src/main/resources/carinademoexample.apk
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-================================================
-
-2020-01-23 11:26:01 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 11:26:01 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 11:26:01 Messager [INFO]  TEST [Default test - feature] STARTED at [11:26:01 2020-01-23]
-2020-01-23 11:26:04 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/authenticate
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:
-{
-    "password": "admin",
-    "username": "admin"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:56:02 GMT
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2Mn0.aaHjsBvL7PDgeJ0V5-KiufKmoJ3ET9qYKg-AS68OsZJ1Tgdcj6jtDdJhgTVpv2XLW4uQeRTW3kuCtCXLQ2PWfA
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2Mn0.aaHjsBvL7PDgeJ0V5-KiufKmoJ3ET9qYKg-AS68OsZJ1Tgdcj6jtDdJhgTVpv2XLW4uQeRTW3kuCtCXLQ2PWfA"
-}
-
-2020-01-23 11:26:06 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:26:07 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2NH0.3IPd7LWd8012tRSlgu4dh2zNGutcZSo1CrIGsSrl9qNSle3xJYpp0d_OJ8hqPEKDI3vsPgN-UViitn7_4v-FgQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2NH0.3IPd7LWd8012tRSlgu4dh2zNGutcZSo1CrIGsSrl9qNSle3xJYpp0d_OJ8hqPEKDI3vsPgN-UViitn7_4v-FgQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1442
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:56:05 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1442
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1442,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:26:09 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:26:10 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2N30.dUJLcqyi5QK3Yzb47-qdSyGptM8vFJGilpi40rxUBHDesZXGJWJnSTcr8TG5VacldhhhmJfGPTWj_YLIxHXzkg
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2N30.dUJLcqyi5QK3Yzb47-qdSyGptM8vFJGilpi40rxUBHDesZXGJWJnSTcr8TG5VacldhhhmJfGPTWj_YLIxHXzkg
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1443
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:56:08 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1443
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1443,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:26:10 AbstractApiMethod [INFO] Request method:	GET
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts/1443
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTM2Nn0.WXjPWAzaFZHuJ-t_mXX6zHIbkEA1jNfW3dQufl-Bejgu_smLi95ifxVTheLazhlNBpmwPTfyzWvBFeNVYViS8g
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:56:09 GMT
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1443,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": "Quality Kiosk",
-    "bankBranchId": 1,
-    "bankBranchLocation": "Mahape",
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": "9999123412",
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:26:11 Messager [INFO]  TEST [Default test - feature] PASSED at [11:26:11 2020-01-23]
-2020-01-23 11:26:11 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 11:26:11 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 11:26:12 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 11:26:12 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579758961701/1764312a-67cf-4aca-9b11-4ce4ea10c1d6/test.log]
-2020-01-23 11:29:28 CarinaListener [INFO] 
-============= Test configuration =============
-url=https://qeeper.herokuapp.com/
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=chrome
-browser_version=*
-browser_language=
-selenium_host=http://localhost:5000/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://localhost:5000/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=com.solvd.carinademoapplication
-capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
-capabilities.automationName=uiautomator2
-capabilities.app=src/main/resources/carinademoexample.apk
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-================================================
-
-2020-01-23 11:29:29 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 11:29:29 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 11:29:29 Messager [INFO]  TEST [Default test - feature] STARTED at [11:29:29 2020-01-23]
-2020-01-23 11:29:32 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/authenticate
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:
-{
-    "password": "admin",
-    "username": "admin"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:59:30 GMT
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3MH0.Akx52R1_dxrp4pbODLFelYWPzs_mBnxRI1nJL1_227a98U3GtEfloIpr54yWUrcA9sKvvxND_-3OFRr7bft07g
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3MH0.Akx52R1_dxrp4pbODLFelYWPzs_mBnxRI1nJL1_227a98U3GtEfloIpr54yWUrcA9sKvvxND_-3OFRr7bft07g"
-}
-
-2020-01-23 11:29:34 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:29:35 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3Mn0.kkRs8Hvp1nAQDDsZ9OGNJbu3Rt3T6Z4yP9JWG83AnQrMAooQE2-XEqwsHVG9h4cdygxVoNW_8mbV1yxB52sRKQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3Mn0.kkRs8Hvp1nAQDDsZ9OGNJbu3Rt3T6Z4yP9JWG83AnQrMAooQE2-XEqwsHVG9h4cdygxVoNW_8mbV1yxB52sRKQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1445
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:59:33 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1445
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1445,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:29:38 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:29:38 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3Nn0.VbHMtZZzmCfy9USQ_h8glFl5oDzoL5mwj5dfb9VUqlV_NTr7I6piV5s_ehdOOnGZJMd5ItZ_nM-Wtj9DBlnMvQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3Nn0.VbHMtZZzmCfy9USQ_h8glFl5oDzoL5mwj5dfb9VUqlV_NTr7I6piV5s_ehdOOnGZJMd5ItZ_nM-Wtj9DBlnMvQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1446
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:59:36 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1446
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1446,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:29:39 AbstractApiMethod [INFO] Request method:	GET
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts/1446
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3NX0.L4BwdQSzFnez_7-xZ75tfASWYgbLesYjxPER9WEIocAcxWdmWC9RGlHvaY3B5XwGLHSV-iFBqbOfy6FcQGbihw
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTU3NX0.L4BwdQSzFnez_7-xZ75tfASWYgbLesYjxPER9WEIocAcxWdmWC9RGlHvaY3B5XwGLHSV-iFBqbOfy6FcQGbihw
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 05:59:37 GMT
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1446,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": "Quality Kiosk",
-    "bankBranchId": 1,
-    "bankBranchLocation": "Mahape",
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": "9999123412",
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:29:39 Messager [INFO]  TEST [Default test - feature] PASSED at [11:29:39 2020-01-23]
-2020-01-23 11:29:39 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 11:29:39 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 11:29:41 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 11:29:41 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579759168988/548a3a40-b6bf-4c26-98a5-ec06e45f5b8f/test.log]
-2020-01-23 11:34:34 CarinaListener [INFO] 
-============= Test configuration =============
-url=https://qeeper.herokuapp.com/
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=chrome
-browser_version=*
-browser_language=
-selenium_host=http://localhost:5000/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://localhost:5000/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=com.solvd.carinademoapplication
-capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
-capabilities.automationName=uiautomator2
-capabilities.app=src/main/resources/carinademoexample.apk
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-================================================
-
-2020-01-23 11:34:34 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 11:34:34 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 11:34:34 Messager [INFO]  TEST [Default test - feature] STARTED at [11:34:34 2020-01-23]
-2020-01-23 11:34:37 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/authenticate
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:
-{
-    "password": "admin",
-    "username": "admin"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:04:35 GMT
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg3NX0.Kq8zICUNnULBfzjYxlczZnL40gxmkOQH22W4p1wzLQmG3CcDqrSKTiSGe0BJm-UZ8uG4zg_SgAbz_4_4A-kgCw
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg3NX0.Kq8zICUNnULBfzjYxlczZnL40gxmkOQH22W4p1wzLQmG3CcDqrSKTiSGe0BJm-UZ8uG4zg_SgAbz_4_4A-kgCw"
-}
-
-2020-01-23 11:34:40 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:34:41 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg3OH0.3948oq7vV42E1Wd8sRVp1YMVK_BTaxnBFF5fOhIEBOMHV48rVBX2zraWpzvD1AX97S1DpmrmgZpyk5dmvLw3-w
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg3OH0.3948oq7vV42E1Wd8sRVp1YMVK_BTaxnBFF5fOhIEBOMHV48rVBX2zraWpzvD1AX97S1DpmrmgZpyk5dmvLw3-w
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1451
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:04:39 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1451
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1451,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:34:44 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:34:45 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg4Mn0.rgHZ95x5pgI2OIbd-dSvJDxFDAY1lUelrrfjpm8RX0VhfpVWJ1Pt2M4EtfD219W2UKN7RIwsyyGU3RbpTO5DLQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg4Mn0.rgHZ95x5pgI2OIbd-dSvJDxFDAY1lUelrrfjpm8RX0VhfpVWJ1Pt2M4EtfD219W2UKN7RIwsyyGU3RbpTO5DLQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1452
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:04:43 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1452
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1452,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:34:45 AbstractApiMethod [INFO] Request method:	GET
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts/1452
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg4MH0.7cqc_oBmOS6Hp2YSrG7EJjJT9IdcdFqyO8lX6M-krXT3qFWkNS8pTxUwRIOcOUCf-TcgAFBHttlslZoro-ZCxw
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NTg4MH0.7cqc_oBmOS6Hp2YSrG7EJjJT9IdcdFqyO8lX6M-krXT3qFWkNS8pTxUwRIOcOUCf-TcgAFBHttlslZoro-ZCxw
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:04:44 GMT
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1452,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": "Quality Kiosk",
-    "bankBranchId": 1,
-    "bankBranchLocation": "Mahape",
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": "9999123412",
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:34:46 Messager [INFO]  TEST [Default test - feature] PASSED at [11:34:46 2020-01-23]
-2020-01-23 11:34:46 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 11:34:46 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 11:34:47 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 11:34:47 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579759474149/40874562-98c4-4914-be66-8cc36ae4e9a2/test.log]
-2020-01-23 11:37:41 CarinaListener [INFO] 
-============= Test configuration =============
-url=https://qeeper.herokuapp.com/
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=chrome
-browser_version=*
-browser_language=
-selenium_host=http://localhost:5000/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://localhost:5000/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=com.solvd.carinademoapplication
-capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
-capabilities.automationName=uiautomator2
-capabilities.app=src/main/resources/carinademoexample.apk
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-================================================
-
-2020-01-23 11:37:41 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 11:37:41 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 11:37:42 Messager [INFO]  TEST [Default test - feature] STARTED at [11:37:42 2020-01-23]
-2020-01-23 11:37:45 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/authenticate
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Body:
-{
-    "password": "admin",
-    "username": "admin"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-X-Frame-Options: DENY
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:07:43 GMT
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NjA2M30.TYfnZVhvc9C0k7gEuvylrHEBd0fF2veBJz3KvkyvwJz02n-58u9UTnOfcEyBZn-RAdrFTngzsYy9Brf4hHn3lQ
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NjA2M30.TYfnZVhvc9C0k7gEuvylrHEBd0fF2veBJz3KvkyvwJz02n-58u9UTnOfcEyBZn-RAdrFTngzsYy9Brf4hHn3lQ"
-}
-
-2020-01-23 11:37:46 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:37:47 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NjA2NH0.h5FBtPcwI6pyr9hBsqQkhEDRV2dAiP0zNJZcebJb7AGL51DUIVO-fO21J5tAg0B4IYjEDUa2jMgPIYaofJrHxQ
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NjA2NH0.h5FBtPcwI6pyr9hBsqQkhEDRV2dAiP0zNJZcebJb7AGL51DUIVO-fO21J5tAg0B4IYjEDUa2jMgPIYaofJrHxQ
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1456
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:07:45 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1456
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1456,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:37:49 AbstractApiMethodV2 [INFO] Base properties loaded: api/users/Postcreate/create.properties
-2020-01-23 11:37:50 AbstractApiMethod [INFO] Request method:	POST
-Request path:	https://qeeper.herokuapp.com/api/bank-accounts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
-Headers:		Accept=*/*
-				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NjA2N30.6CZylyQ-A2a522ghesDRfb7QaqugF7NhZdo4pAAAVcB7v4wA0lj32jGpZ9eeo_9LcXELHlwJoCZfa429a93PQw
-				Content-Type=application/json; charset=UTF-8
-Cookies:		pfJSESSIONID=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3OTg0NjA2N30.6CZylyQ-A2a522ghesDRfb7QaqugF7NhZdo4pAAAVcB7v4wA0lj32jGpZ9eeo_9LcXELHlwJoCZfa429a93PQw
-Body:
-{
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "bankBranchId": 1,
-    "mobileNumberMappedId": 1,
-    "parentAccountId": 1
-}
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: close
-Content-Encoding: gzip
-Expires: 0
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-X-Xss-Protection: 1; mode=block
-Pragma: no-cache
-Location: /api/bank-accounts/1457
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
-Date: Thu, 23 Jan 2020 06:07:48 GMT
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-X-Qeeperapp-Params: 1457
-X-Qeeperapp-Alert: qeeperApp.bankAccount.created
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
-Content-Type: application/json;charset=UTF-8
-Via: 1.1 vegur
-
-{
-    "id": 1457,
-    "dateOfOpening": null,
-    "openedBy": "Test",
-    "customerId": "1234",
-    "accountNumber": "123456789",
-    "loginId": "Test",
-    "loginPassword": "Test",
-    "email": "test@test.com",
-    "phone": "9833653536",
-    "bankAccountType": "SAVING",
-    "chequeBookIssued": true,
-    "accountBalance": 5.0,
-    "balanceCheckedOn": null,
-    "minimumBalance": 3.0,
-    "passwordGetsExpired": false,
-    "expirationPeriodDays": 13,
-    "passwordUpdatedOn": null,
-    "remarks": "Test",
-    "accountStatus": "ACTIVE",
-    "multipleSessionAllowed": true,
-    "projectName": "Sample",
-    "projectCode": "123456",
-    "requestedOn": null,
-    "requestedBy": "Test",
-    "accountHolderId": 3,
-    "accountHolderName": null,
-    "bankBranchId": 1,
-    "bankBranchLocation": null,
-    "mobileNumberMappedId": 1,
-    "mobileNumberMappedNumber": null,
-    "parentAccountId": 1,
-    "bankAccountGroupId": null,
-    "bankAccountGroupName": null
-}
-
-2020-01-23 11:37:50 Messager [INFO]  TEST [Default test - feature] PASSED at [11:37:50 2020-01-23]
-2020-01-23 11:37:50 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 11:37:50 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 11:37:51 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 11:37:51 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579759661761/ee68b90b-6b9a-4819-9761-4c1f111db815/test.log]
-2020-01-23 18:11:09 CarinaListener [INFO] 
-============= Test configuration =============
-url={must_override}
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=
-browser_version=
-browser_language=
-selenium_host=http://0.0.0.4723/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://0.0.0.4723/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=fc.admin.fcexpressadmin
-capabilities.appActivity=fc.admin.fcexpressadmin.HomeActivity
-capabilities.automationName=uiautomator2
-capabilities.platformversion=8.0
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-capabilities.udid=5200251752f325b9
-================================================
-
-2020-01-23 18:11:09 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 18:11:09 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 18:11:09 Messager [WARN]  TEST [Default test - feature] SKIPPED at [18:11:09 2020-01-23] - java.lang.IllegalArgumentException: Not a file or directory: D:\Training\Atlas_Demo\src\test\resources\features\FirstcryTest.feature
-
-org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 18:11:09 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 18:11:10 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 18:11:10 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
-2020-01-23 18:11:11 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 18:11:11 Messager [INFO] RESULT #1: TEST [Default test - feature] SKIP [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579783269056/33beca90-f68e-404b-8635-a5d02909d7f9/test.log]
-2020-01-23 18:13:07 CarinaListener [INFO] 
-============= Test configuration =============
-url={must_override}
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=
-browser_version=
-browser_language=
-selenium_host=http://0.0.0.4723/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://0.0.0.4723/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=fc.admin.fcexpressadmin
-capabilities.appActivity=fc.admin.fcexpressadmin.HomeActivity
-capabilities.automationName=uiautomator2
-capabilities.platformversion=8.0
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-capabilities.udid=5200251752f325b9
-================================================
-
-2020-01-23 18:13:07 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 18:13:07 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 18:13:08 Messager [WARN]  TEST [Default test - feature] SKIPPED at [18:13:08 2020-01-23] - java.lang.IllegalArgumentException: Not a file or directory: D:\src\test\resources\features\Firstcry.feature
-
-org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 18:13:08 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 18:13:08 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 18:13:08 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
-2020-01-23 18:13:09 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 18:13:09 Messager [INFO] RESULT #1: TEST [Default test - feature] SKIP [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579783387686/833e3429-12b8-4a8f-b042-786b76c5c7d6/test.log]
-2020-01-23 18:14:26 CarinaListener [INFO] 
-============= Test configuration =============
-url={must_override}
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=
-browser_version=
-browser_language=
-selenium_host=http://0.0.0.4723/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://0.0.0.4723/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=fc.admin.fcexpressadmin
-capabilities.appActivity=fc.admin.fcexpressadmin.HomeActivity
-capabilities.automationName=uiautomator2
-capabilities.platformversion=8.0
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-capabilities.udid=5200251752f325b9
-================================================
-
-2020-01-23 18:14:26 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 18:14:26 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 18:14:26 Messager [INFO]  TEST [Default test - feature] STARTED at [18:14:26 2020-01-23]
-2020-01-23 18:14:26 Messager [ERROR]  TEST [Default test - feature] FAILED at [18:14:26 2020-01-23] - Error parsing feature file src/test/resources/features/Firstcry.feature
-
-cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:133)
-cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:104)
-cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
-cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
-cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:239)
-cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:85)
-cucumber.api.testng.TestNGCucumberRunner.provideFeatures(TestNGCucumberRunner.java:94)
-com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.features(CucumberRunner.java:61)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 18:14:26 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 18:14:26 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 18:14:26 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
-2020-01-23 18:14:28 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 18:14:28 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579783466105/521aa686-b2c2-4395-8787-bf32620dd6e2/test.log]
-2020-01-23 18:21:33 CarinaListener [INFO] 
-============= Test configuration =============
-url={must_override}
-env=DEMO
-env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
-platform=*
-browser=
-browser_version=
-browser_language=
-selenium_host=http://0.0.0.4723/wd/hub
-driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
-max_driver_count=3
-custom_capabilities=
-chrome_args=
-chrome_experimental_opts=
-chrome_mobile_emulation_opts=
-firefox_args=
-firefox_preferences=
-app_version=
-proxy_host=
-proxy_port=
-proxy_protocols=http,https,ftp
-browsermob_proxy=false
-browsermob_host=
-browsermob_port=0
-browsermob_ports_range=
-browsermob_disabled_mitm=false
-proxy_set_to_system=false
-report_url=
-email_list=
-failure_email_list=
-track_known_issues=false
-auto_screenshot=true
-implicit_timeout=10
-explicit_timeout=20
-auto_download=false
-auto_download_apps=
-custom_artifacts_folder=
-retry_interval=5
-project_report_directory=./reports/qa
-max_screen_history=10
-max_log_file_size=150
-result_sorting=true
-big_screen_width=-1
-big_screen_height=-1
-small_screen_width=90
-small_screen_height=60
-init_retry_count=0
-init_retry_interval=1
-retry_count=0
-enable_l10n=true
-l10n_encoding=ISO-8859-1
-locale=en_US
-enable_i18n=true
-language=en_US
-thread_count=1
-data_provider_thread_count=-1
-core_log_level=INFO
-core_log_packages=com.qaprosoft.carina.core
-artifacts_expiration_seconds=2592000
-log_all_json=true
-date_format=HH:mm:ss yyyy-MM-dd
-time_format=HH:mm:ss
-suite_name=
-jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
-jira_url=
-jira_user=
-jira_password=
-jira_suite_id=
-jira_project=
-jira_project_short=
-jira_create_new_ticket=false
-test_naming_pattern={method_name}
-optimize_video_recording=false
-testrail_run_name=
-testrail_milestone=
-testrail_assignee=
-qtest_cycle_name=DailyAutomation
-qtest_suite_name=
-s3_bucket_name=
-access_key_id=
-secret_key=
-s3_use_presign_url=false
-s3_local_storage=.
-appcenter_token=
-appcenter_local_storage=.
-add_new_localization=false
-add_new_localization_encoding=utf-8
-add_new_localization_path=
-add_new_localization_property_name=new_custom_messages_
-tls_keysecure_location=
-health_check_class=
-health_check_methods=
-uninstall_related_apps=false
-default_device_timezone=GMT
-default_device_time_format=24
-default_device_language=en_US
-android_screen_record_size=
-android_screen_record_bitrate=
-android_enable_bug_report=true
-ios_screen_record_quality=MEDIUM
-ios_screen_record_codec=libx264
-ios_screen_record_fps=10
-screen_record_duration=180
-video_scale=-2:720
-ignore_ssl=false
-test_run_rules=
-hub_mode=selenium
-extract_sys_log=false
-selenium_host=http://0.0.0.4723/wd/hub
-
-------------- Driver capabilities -----------
-capabilities.appPackage=fc.admin.fcexpressadmin
-capabilities.appActivity=fc.admin.fcexpressadmin.HomeActivity
-capabilities.automationName=uiautomator2
-capabilities.platformversion=8.0
-capabilities.platformName=ANDROID
-capabilities.deviceType=phone
-capabilities.udid=5200251752f325b9
-================================================
-
-2020-01-23 18:21:33 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 18:21:33 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 18:21:33 Messager [INFO]  TEST [Default test - feature] STARTED at [18:21:33 2020-01-23]
-2020-01-23 18:21:35 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - java.net.UnknownHostException: 0.0.0.4723
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: java.net.UnknownHostException: 0.0.0.4723
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:169)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.cucumber.steps.FirstcryStepdef.startMethod(FirstcryStepdef.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.UnknownHostException: 0.0.0.4723
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
-	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
-	at java.net.InetAddress.getAllByName0(Unknown Source)
-	at java.net.InetAddress.getAllByName(Unknown Source)
-	at java.net.InetAddress.getAllByName(Unknown Source)
-	at okhttp3.Dns$1.lookup(Dns.java:40)
-	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:185)
-	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:149)
-	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:84)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:214)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 58 more
-2020-01-23 18:21:35 Messager [ERROR]  TEST [Default test - feature] FAILED at [18:21:35 2020-01-23] - org.openqa.selenium.WebDriverException: java.net.UnknownHostException: 0.0.0.4723
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
-
-cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 18:21:35 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 18:21:35 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 18:21:35 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
-2020-01-23 18:21:37 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 18:21:37 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579783893478/9c337590-3568-4818-90ee-de564b78e0b1/test.log]
-2020-01-23 18:22:59 CarinaListener [INFO] 
+2020-01-24 17:05:52 CarinaListener [INFO] 
 ============= Test configuration =============
 url={must_override}
 env=DEMO
@@ -3315,120 +110,26 @@ extract_sys_log=false
 selenium_host=http://localhost:4723/wd/hub
 
 ------------- Driver capabilities -----------
-capabilities.appPackage=fc.admin.fcexpressadmin
-capabilities.appActivity=fc.admin.fcexpressadmin.HomeActivity
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
 capabilities.automationName=uiautomator2
 capabilities.platformversion=8.0
 capabilities.platformName=ANDROID
 capabilities.deviceType=phone
-capabilities.udid=5200251752f325b9
+capabilities.udid=ZY223LBBJ4
 ================================================
 
-2020-01-23 18:22:59 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 18:22:59 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 18:22:59 Messager [INFO]  TEST [Default test - feature] STARTED at [18:22:59 2020-01-23]
-2020-01-23 18:23:01 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - org.openqa.selenium.SessionNotCreatedException: A new session could not be created. Details: The desiredCapabilities object was not valid for the following reason(s): 'deviceName' can't be blank (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 238 milliseconds
+2020-01-24 17:05:52 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 17:05:52 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 17:05:52 Messager [INFO]  TEST [Default test - feature] STARTED at [17:05:52 2020-01-24]
+2020-01-24 17:06:27 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 17:06:31 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [17:06:31 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. Details: The desiredCapabilities object was not valid for the following reason(s): 'deviceName' can't be blank (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 238 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:169)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.cucumber.steps.FirstcryStepdef.startMethod(FirstcryStepdef.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. Details: The desiredCapabilities object was not valid for the following reason(s): 'deviceName' can't be blank (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 238 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 58 more
-2020-01-23 18:23:01 Messager [ERROR]  TEST [Default test - feature] FAILED at [18:23:01 2020-01-23] - org.openqa.selenium.WebDriverException: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. Details: The desiredCapabilities object was not valid for the following reason(s): 'deviceName' can't be blank (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 238 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: AndroidDriver
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 0f1371c4-602e-4ad1-968e-06c..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 0f1371c4-602e-4ad1-968e-06c..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 5e522d0f-a2b9-4e9e-9e1e-ae63f66c9a65
 
 cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
@@ -3457,12 +158,12 @@ org.testng.TestNG.run(TestNG.java:1017)
 org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 18:23:01 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 18:23:01 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 18:23:01 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
-2020-01-23 18:23:02 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 18:23:02 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [log=file://D:\Training\Atlas_Demo\.\reports\qa\1579783979625/b6c5ee62-787b-4be5-ae1d-b84d135dc994/test.log]
-2020-01-23 18:24:24 CarinaListener [INFO] 
+2020-01-24 17:06:31 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 17:06:32 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 17:06:32 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 17:06:34 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 17:06:34 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579865752371/f158764d-d44c-4e37-9263-807766149b63/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579865752371/f158764d-d44c-4e37-9263-807766149b63/test.log]
+2020-01-24 17:42:03 CarinaListener [INFO] 
 ============= Test configuration =============
 url={must_override}
 env=DEMO
@@ -3574,21 +275,26 @@ extract_sys_log=false
 selenium_host=http://localhost:4723/wd/hub
 
 ------------- Driver capabilities -----------
-capabilities.deviceName=Samsung
-capabilities.appPackage=fc.admin.fcexpressadmin
-capabilities.appActivity=fc.admin.fcexpressadmin.HomeActivity
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
 capabilities.automationName=uiautomator2
 capabilities.platformversion=8.0
 capabilities.platformName=ANDROID
 capabilities.deviceType=phone
-capabilities.udid=5200251752f325b9
+capabilities.udid=ZY223LBBJ4
 ================================================
 
-2020-01-23 18:24:24 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-23 18:24:24 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-23 18:24:24 Messager [INFO]  TEST [Default test - feature] STARTED at [18:24:24 2020-01-23]
-2020-01-23 18:24:58 Device [INFO] Test will be started on device: SM-J720F:5200251752f325b9
-2020-01-23 18:25:09 Messager [ERROR] SM-J720F - 5200251752f325b9 TEST [Default test - feature] FAILED at [18:25:09 2020-01-23] - java.lang.RuntimeException: There is no any class that satisfy to required conditions: [parent class - com.qaprosoft.carina.demo.mobile.gui.pages.common.FirstCryPageBase], [device type - ANDROID_PHONE]
+2020-01-24 17:42:03 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 17:42:03 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 17:42:03 Messager [INFO]  TEST [Default test - feature] STARTED at [17:42:03 2020-01-24]
+2020-01-24 17:42:41 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 17:42:46 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [17:42:46 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 306b8e84-b8d8-41e9-b030-752..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 306b8e84-b8d8-41e9-b030-752..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c772b19c-108c-4159-b57e-facdc2fc4dd2
 
 cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
@@ -3617,8 +323,998 @@ org.testng.TestNG.run(TestNG.java:1017)
 org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-23 18:25:10 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-23 18:25:10 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-23 18:25:10 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
-2020-01-23 18:25:11 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-23 18:25:11 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579784064531/0839f78b-47c1-4d0f-91ae-30ac6570ac42/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579784064531/0839f78b-47c1-4d0f-91ae-30ac6570ac42/test.log]
+2020-01-24 17:42:47 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 17:42:47 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 17:42:47 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 17:42:48 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 17:42:48 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579867923679/a0e0e024-2798-4b90-a7eb-292934c0cb98/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579867923679/a0e0e024-2798-4b90-a7eb-292934c0cb98/test.log]
+2020-01-24 17:53:11 CarinaListener [INFO] 
+============= Test configuration =============
+url={must_override}
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=
+browser_version=
+browser_language=
+selenium_host=http://localhost:4723/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4723/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
+capabilities.automationName=uiautomator2
+capabilities.platformversion=8.0
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+capabilities.udid=ZY223LBBJ4
+================================================
+
+2020-01-24 17:53:11 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 17:53:11 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 17:53:11 Messager [INFO]  TEST [Default test - feature] STARTED at [17:53:11 2020-01-24]
+2020-01-24 17:53:52 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 17:53:55 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [17:53:55 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 4c36afce-c0e0-4b0a-8c81-847..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 4c36afce-c0e0-4b0a-8c81-847..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d3926961-0cc4-4ef4-97cc-65e22f459595
+
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:648)
+org.testng.TestRunner.run(TestRunner.java:505)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+org.testng.SuiteRunner.run(SuiteRunner.java:364)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+org.testng.TestNG.runSuites(TestNG.java:1049)
+org.testng.TestNG.run(TestNG.java:1017)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2020-01-24 17:53:55 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 17:53:56 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 17:53:56 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 17:53:57 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 17:53:57 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579868591425/179093f9-67f3-45a9-b644-1ac50603bf0b/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579868591425/179093f9-67f3-45a9-b644-1ac50603bf0b/test.log]
+2020-01-24 17:58:22 CarinaListener [INFO] 
+============= Test configuration =============
+url={must_override}
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=
+browser_version=
+browser_language=
+selenium_host=http://localhost:4723/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4723/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
+capabilities.automationName=uiautomator2
+capabilities.platformversion=8.0
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+capabilities.udid=ZY223LBBJ4
+================================================
+
+2020-01-24 17:58:22 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 17:58:22 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 17:58:22 Messager [INFO]  TEST [Default test - feature] STARTED at [17:58:22 2020-01-24]
+2020-01-24 17:58:59 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 17:59:03 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [17:59:03 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 3437e5c1-1ef5-4f19-b2d1-5d4..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 3437e5c1-1ef5-4f19-b2d1-5d4..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0ebdd69e-8b78-415a-bdec-3af644ef5912
+
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:648)
+org.testng.TestRunner.run(TestRunner.java:505)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+org.testng.SuiteRunner.run(SuiteRunner.java:364)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+org.testng.TestNG.runSuites(TestNG.java:1049)
+org.testng.TestNG.run(TestNG.java:1017)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2020-01-24 17:59:03 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 17:59:03 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 17:59:03 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 17:59:05 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 17:59:05 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579868902618/e571cb7c-e879-45b4-8dd8-b1448698c1ab/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579868902618/e571cb7c-e879-45b4-8dd8-b1448698c1ab/test.log]
+2020-01-24 18:03:12 CarinaListener [INFO] 
+============= Test configuration =============
+url={must_override}
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=
+browser_version=
+browser_language=
+selenium_host=http://localhost:4723/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4723/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
+capabilities.automationName=uiautomator2
+capabilities.platformversion=8.0
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+capabilities.udid=ZY223LBBJ4
+================================================
+
+2020-01-24 18:03:12 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 18:03:12 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 18:03:12 Messager [INFO]  TEST [Default test - feature] STARTED at [18:03:12 2020-01-24]
+2020-01-24 18:03:48 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 18:03:53 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [18:03:53 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 5e56a185-fc2a-449b-bd89-940..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 5e56a185-fc2a-449b-bd89-940..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 60a45213-3c33-4f80-ade2-cb16b4f4300f
+
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:648)
+org.testng.TestRunner.run(TestRunner.java:505)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+org.testng.SuiteRunner.run(SuiteRunner.java:364)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+org.testng.TestNG.runSuites(TestNG.java:1049)
+org.testng.TestNG.run(TestNG.java:1017)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2020-01-24 18:03:53 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 18:03:53 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 18:03:53 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 18:03:55 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 18:03:55 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579869192090/e9b61f67-8998-4f5b-93ec-d6f16a667805/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579869192090/e9b61f67-8998-4f5b-93ec-d6f16a667805/test.log]
+2020-01-24 18:04:30 CarinaListener [INFO] 
+============= Test configuration =============
+url={must_override}
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=
+browser_version=
+browser_language=
+selenium_host=http://localhost:4723/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4723/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
+capabilities.automationName=uiautomator2
+capabilities.platformversion=8.0
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+capabilities.udid=ZY223LBBJ4
+================================================
+
+2020-01-24 18:04:31 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 18:04:31 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 18:04:31 Messager [INFO]  TEST [Default test - feature] STARTED at [18:04:31 2020-01-24]
+2020-01-24 18:05:09 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 18:05:16 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [18:05:16 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 669d9c1e-02e4-405d-b107-957..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: 669d9c1e-02e4-405d-b107-957..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 44481800-41b1-4c70-b0c5-9cbbbc040780
+
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:648)
+org.testng.TestRunner.run(TestRunner.java:505)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+org.testng.SuiteRunner.run(SuiteRunner.java:364)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+org.testng.TestNG.runSuites(TestNG.java:1049)
+org.testng.TestNG.run(TestNG.java:1017)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2020-01-24 18:05:16 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 18:05:17 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 18:05:17 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 18:05:18 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 18:05:18 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579869271049/12a3d179-365e-444a-b812-3da5fd0f3e6b/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579869271049/12a3d179-365e-444a-b812-3da5fd0f3e6b/test.log]
+2020-01-24 18:18:04 CarinaListener [INFO] 
+============= Test configuration =============
+url={must_override}
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=
+browser_version=
+browser_language=
+selenium_host=http://localhost:4723/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4723/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
+capabilities.automationName=uiautomator2
+capabilities.platformversion=8.0
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+capabilities.udid=ZY223LBBJ4
+================================================
+
+2020-01-24 18:18:04 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 18:18:04 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 18:18:04 Messager [INFO]  TEST [Default test - feature] STARTED at [18:18:04 2020-01-24]
+2020-01-24 18:18:44 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 18:18:48 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [18:18:48 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: dab86bfd-1d7a-4321-8770-f7e..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: dab86bfd-1d7a-4321-8770-f7e..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ee474dc0-c15b-4cdd-87f5-5e5fb7e1d681
+
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:648)
+org.testng.TestRunner.run(TestRunner.java:505)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+org.testng.SuiteRunner.run(SuiteRunner.java:364)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+org.testng.TestNG.runSuites(TestNG.java:1049)
+org.testng.TestNG.run(TestNG.java:1017)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2020-01-24 18:18:48 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 18:18:48 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 18:18:48 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 18:18:50 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 18:18:50 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579870084151/b4f6306e-ad14-4e69-b74e-84b5ae9cd992/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579870084151/b4f6306e-ad14-4e69-b74e-84b5ae9cd992/test.log]
+2020-01-24 18:20:28 CarinaListener [INFO] 
+============= Test configuration =============
+url={must_override}
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=
+browser_version=
+browser_language=
+selenium_host=http://localhost:4723/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4723/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.deviceName=Moto
+capabilities.appPackage=com.tul.tatacliq
+capabilities.appActivity=com.tul.tatacliq.activities.MainActivity
+capabilities.automationName=uiautomator2
+capabilities.platformversion=8.0
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+capabilities.udid=ZY223LBBJ4
+================================================
+
+2020-01-24 18:20:29 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-24 18:20:29 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-24 18:20:29 Messager [INFO]  TEST [Default test - feature] STARTED at [18:20:29 2020-01-24]
+2020-01-24 18:21:03 Device [INFO] Test will be started on device: Moto G (4):ZY223LBBJ4
+2020-01-24 18:21:07 Messager [ERROR] Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [18:21:07 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 215f3368-09d1-4af5-8411-6e188f5db7e0
+
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:648)
+org.testng.TestRunner.run(TestRunner.java:505)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+org.testng.SuiteRunner.run(SuiteRunner.java:364)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+org.testng.TestNG.runSuites(TestNG.java:1049)
+org.testng.TestNG.run(TestNG.java:1017)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2020-01-24 18:21:08 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-24 18:21:08 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-24 18:21:08 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2020-01-24 18:21:09 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-24 18:21:09 Messager [INFO] RESULT #1: TEST [Default test - feature] FAIL [screenshots=file://D:\Training\Atlas_Demo\.\reports\qa\1579870228976/90ce94bc-44bf-47d7-9b1f-9499c25fa3fd/report.html | log=file://D:\Training\Atlas_Demo\.\reports\qa\1579870228976/90ce94bc-44bf-47d7-9b1f-9499c25fa3fd/test.log]

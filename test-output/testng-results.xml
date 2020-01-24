@@ -2,7 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[SM-J720F - 5200251752f325b9 TEST [Default test - feature] FAILED at [18:25:09 2020-01-23] - java.lang.RuntimeException: There is no any class that satisfy to required conditions: [parent class - com.qaprosoft.carina.demo.mobile.gui.pages.common.FirstCryPageBase], [device type - ANDROID_PHONE]
+      <![CDATA[Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [18:21:07 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 215f3368-09d1-4af5-8411-6e188f5db7e0
 
 cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
@@ -33,32 +38,42 @@ org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47259" started-at="2020-01-23T12:54:24Z" finished-at="2020-01-23T12:55:11Z">
+  <suite name="Default suite" duration-ms="40760" started-at="2020-01-24T12:50:29Z" finished-at="2020-01-24T12:51:09Z">
     <groups>
       <group name="cucumber">
-        <method signature="CucumberRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qaprosoft.carina.demo.FirstcryTest@a1f72f5]" name="feature" class="com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner"/>
+        <method signature="CucumberRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qaprosoft.carina.demo.TataCliqTest@75c56eb9]" name="feature" class="com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="47259" started-at="2020-01-23T12:54:24Z" finished-at="2020-01-23T12:55:11Z">
-      <class name="com.qaprosoft.carina.demo.FirstcryTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qaprosoft.carina.demo.FirstcryTest@a1f72f5]" name="setUpClass" is-config="true" duration-ms="60" started-at="2020-01-23T12:54:24Z" finished-at="2020-01-23T12:54:24Z">
+    <test name="Default test" duration-ms="40760" started-at="2020-01-24T12:50:29Z" finished-at="2020-01-24T12:51:09Z">
+      <class name="com.qaprosoft.carina.demo.TataCliqTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qaprosoft.carina.demo.TataCliqTest@75c56eb9]" name="setUpClass" is-config="true" duration-ms="47" started-at="2020-01-24T12:50:29Z" finished-at="2020-01-24T12:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qaprosoft.carina.demo.FirstcryTest@a1f72f5]" name="feature" duration-ms="39704" started-at="2020-01-23T12:54:24Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-01-23T12:55:04Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qaprosoft.carina.demo.TataCliqTest@75c56eb9]" name="feature" duration-ms="34313" started-at="2020-01-24T12:50:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-01-24T12:51:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[login]]>
+                <![CDATA[main Page]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.RuntimeException: There is no any class that satisfy to required conditions: [parent class - com.qaprosoft.carina.demo.mobile.gui.pages.common.FirstCryPageBase], [device type - ANDROID_PHONE]]]>
+              <![CDATA[org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 215f3368-09d1-4af5-8411-6e188f5db7e0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.RuntimeException: There is no any class that satisfy to required conditions: [parent class - com.qaprosoft.carina.demo.mobile.gui.pages.common.FirstCryPageBase], [device type - ANDROID_PHONE]
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 215f3368-09d1-4af5-8411-6e188f5db7e0
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -86,16 +101,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.RuntimeException: There is no any class that satisfy to required conditions: [parent class - com.qaprosoft.carina.demo.mobile.gui.pages.common.FirstCryPageBase], [device type - ANDROID_PHONE]
-at com.qaprosoft.carina.core.foundation.utils.factory.ICustomTypePageFactory.initPage(ICustomTypePageFactory.java:110)
-at com.qaprosoft.carina.demo.cucumber.steps.FirstcryStepdef.startMethod(FirstcryStepdef.java:23)
-at ✽.Given launch the application(src/test/resources/features/Firstcry.feature:7)
+Caused by: org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 215f3368-09d1-4af5-8411-6e188f5db7e0
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at io.appium.java_client.android.$Proxy37.getCurrentUrl(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.getCurrentUrl(EventFiringWebDriver.java:171)
+at com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.isPageOpened(DriverHelper.java:701)
+at com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.isPageOpened(DriverHelper.java:686)
+at com.qaprosoft.carina.core.gui.AbstractPage.isPageOpened(AbstractPage.java:77)
+at com.qaprosoft.carina.demo.cucumber.steps.TatacliqStepdef.startMethod(TatacliqStepdef.java:23)
+at ✽.Given start application(src/test/resources/features/TataCLiq.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
             <line>
-              <![CDATA[SM-J720F - 5200251752f325b9 TEST [Default test - feature] FAILED at [18:25:09 2020-01-23] - java.lang.RuntimeException: There is no any class that satisfy to required conditions: [parent class - com.qaprosoft.carina.demo.mobile.gui.pages.common.FirstCryPageBase], [device type - ANDROID_PHONE]
+              <![CDATA[Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [18:21:07 2020-01-24] - org.openqa.selenium.UnsupportedCommandException: Method has not yet been implemented
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'T440P', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., databaseEnabled: false, desired: {appActivity: com.tul.tatacliq.activities..., appPackage: com.tul.tatacliq, automationName: uiautomator2, carinaTestRunId: a0cfa592-eb47-490a-99ea-6c9..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 8.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 8.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 215f3368-09d1-4af5-8411-6e188f5db7e0
 
 cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
@@ -127,18 +175,18 @@ org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass(org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.FirstcryTest@a1f72f5]" name="tearDownClass" is-config="true" duration-ms="1647" started-at="2020-01-23T12:55:10Z" finished-at="2020-01-23T12:55:11Z">
+        <test-method status="PASS" signature="tearDownClass(org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.TataCliqTest@75c56eb9]" name="tearDownClass" is-config="true" duration-ms="1638" started-at="2020-01-24T12:51:08Z" finished-at="2020-01-24T12:51:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3bbf6abe]]>
+                <![CDATA[org.testng.TestRunner@380e1909]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.qaprosoft.carina.demo.FirstcryTest -->
+      </class> <!-- com.qaprosoft.carina.demo.TataCliqTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
