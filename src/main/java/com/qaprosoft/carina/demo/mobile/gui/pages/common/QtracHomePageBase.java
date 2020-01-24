@@ -14,6 +14,11 @@ public  abstract class QtracHomePageBase extends AbstractPage{
 
 	public abstract void clickPageBucketDashborad();
 
+	public void click_button() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 
 }

@@ -21,6 +21,6 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 public class PostUserCreationMethod extends AbstractApiMethodV2 {
     public PostUserCreationMethod() {
         super(null, null);
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("userCreate"));
+        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 }
