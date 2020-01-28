@@ -9,7 +9,7 @@ Feature:main Page
     And touch on first_option
     Then touch on first Dress
     And buy now
-    And enter the email 
+    And enter the name 
     And enter password
     Then touch on login
     

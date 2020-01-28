@@ -13,7 +13,7 @@ public abstract class TataCliqPageBase extends AbstractPage {
 
 	public abstract void click_on_search_button();
 	
-	public abstract void enter_name(String abc);
+	public abstract void enter_name(String name);
 	
 	public  abstract void click_on_option();
 

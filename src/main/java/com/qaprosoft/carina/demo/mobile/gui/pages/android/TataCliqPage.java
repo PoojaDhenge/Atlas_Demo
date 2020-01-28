@@ -11,10 +11,10 @@ import com.qaprosoft.carina.demo.mobile.gui.pages.common.TataCliqPageBase;
 @DeviceType(pageType = Type.ANDROID_PHONE, parentClass = TataCliqPageBase.class)
 public class TataCliqPage extends TataCliqPageBase{
 	
-	@FindBy(xpath="//android.widget.TextView[@content-desc=\"Search TataCLiQ\"]")
+	@FindBy(xpath="//android.widget.FrameLayout[@content-desc=\"Categories\"]")
 	private ExtendedWebElement search_btn;
 	
-	@FindBy(xpath="//android.widget.EditText[@text='What are you looking for?']")
+	@FindBy(id="text_view_level_one_category_text")
 	private ExtendedWebElement item;
 
 	@FindBy(xpath="//android.widget.TextView[@text='Dress in Ethnic Wear']")
@@ -49,10 +49,9 @@ public class TataCliqPage extends TataCliqPageBase{
 	}
 
 	@Override
-	public void enter_name(String abc) {
+	public void enter_name() {
 		pause(1);
 		item.click();
-		item.type(abc);
 		
 	}
 	
@@ -84,9 +83,10 @@ public class TataCliqPage extends TataCliqPageBase{
 		user_name.type(name);
 	}
 	
+	@Override
 	public void enter_password(String pass)
 	{
-		pause(2);
+		pause(1);
 		password.click();
 		password.type(pass);
 		

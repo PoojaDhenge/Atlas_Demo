@@ -18,9 +18,9 @@ public class TatacliqStepdef extends CucumberRunner{
 	TataCliqPageBase user;
 	
 	 @Given("^start application$")
-	 public boolean startMethod() throws Exception  {
+	 public void startMethod() throws Exception  {
 		 user = initPage(getDriver(), TataCliqPageBase.class);
-			return user.isPageOpened();
+			//return user.isPageOpened();
 			
 			
 		}
@@ -31,9 +31,9 @@ public class TatacliqStepdef extends CucumberRunner{
 	 }
 	 
 	 @And("^enter Dress$")
-	 public void enter_name(String abc)
+	 public void enter_name()
 	 {
-		 user.enter_name("dress");
+		 user.enter_name();
 	 }
 	 
 	 @And("^touch on first_option$")
@@ -54,7 +54,7 @@ public class TatacliqStepdef extends CucumberRunner{
 		 user.click_on_buy_now();
 	 }
 	 
-	 @And("^enter email$")
+	 @And("^enter the name$")
 	 public void enter_details(String name)
 	 {
 		 user.enter_details("Pooja");
