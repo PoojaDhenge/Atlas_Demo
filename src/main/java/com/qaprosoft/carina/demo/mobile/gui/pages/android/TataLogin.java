@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType.Type;
+import com.qaprosoft.carina.core.foundation.utils.mobile.MobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.Home_CreateAccBasePage;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.TataLoginBasePage;
@@ -27,7 +28,7 @@ public class TataLogin extends TataLoginBasePage{
 	@Override
 	public void enter_userid(String id) {
 		pause(2);
-		enter_userid.click();
+	MobileUtils.tap(enter_userid);
 		pause(2);
 		enter_userid.type(id);
 		
@@ -36,7 +37,7 @@ public class TataLogin extends TataLoginBasePage{
 	@Override
 	public void enter_pass(String pass) {
 		pause(2);
-		enter_pass.click();
+		MobileUtils.tap(enter_pass);
 		pause(2);
 		enter_pass.type(pass);
 		

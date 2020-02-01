@@ -2,9 +2,6 @@ package com.qaprosoft.carina.demo;
 
 
 import com.qaprosoft.carina.core.foundation.cucumber.CucumberBaseTest;
-
-
-
 import cucumber.api.CucumberOptions;
 
 

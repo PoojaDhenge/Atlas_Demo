@@ -33,7 +33,7 @@ public class TatacliqStepdef extends CucumberRunner{
 	 @And("^enter Dress$")
 	 public void enter_name()
 	 {
-		 user.enter_name();
+		 user.enter_name("dress");
 	 }
 	 
 	 @And("^touch on first_option$")
@@ -55,13 +55,13 @@ public class TatacliqStepdef extends CucumberRunner{
 	 }
 	 
 	 @And("^enter the name$")
-	 public void enter_details(String name)
+	 public void enter_details()
 	 {
 		 user.enter_details("Pooja");
 	 }
 	 
 	 @And("^enter password$")
-	 public void enter_password(String pass)
+	 public void enter_password()
 	 {
 		 user.enter_password("Pooja");
 	 }

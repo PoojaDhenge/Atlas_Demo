@@ -7,6 +7,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType.Type;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.TataCliqPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.TataLoginBasePage;
 
 @DeviceType(pageType = Type.ANDROID_PHONE, parentClass = TataCliqPageBase.class)
 public class TataCliqPage extends TataCliqPageBase{
@@ -49,9 +50,11 @@ public class TataCliqPage extends TataCliqPageBase{
 	}
 
 	@Override
-	public void enter_name() {
+	public void enter_name(String name) {
 		pause(1);
 		item.click();
+		pause(2);
+		item.type(name);
 		
 	}
 	

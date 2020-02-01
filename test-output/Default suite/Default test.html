@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 28 17:43:04 IST 2020</td>
+<td>Started on:</td><td>Thu Jan 30 17:24:10 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>76 seconds (76032 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108191 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qaprosoft.carina.demo.TataAccountTest.feature()'><b>feature</b><br>Test class: com.qaprosoft.carina.demo.TataAccountTest<br>Test method: Runs Cucumber Feature<br>Parameters: Create account<br/>
-<a href="#Output-973123933" onClick='toggleBox("Output-973123933", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-412375354" onClick='toggleBox("Output-412375354", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-973123933" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-973123933">
-Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [17:44:18 2020-01-28] - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - ""
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'T440P', ip: '192.168.216.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
+<a href="#Output-412375354" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-412375354">
+Moto G (4) - ZY223LBBJ4 TEST [Default test - feature] FAILED at [17:25:56 2020-01-30] - org.openqa.selenium.NoSuchElementException: Unable to detect element: click_login (By.xpath: //android.widget.Button[@text='LOGIN'])
 
 cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
@@ -116,12 +111,7 @@ org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
 </div>
 </td>
-<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - &quot;&quot;
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;T440P&apos;, ip: &apos;192.168.216.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
+<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Unable to detect element: click_login (By.xpath: //android.widget.Button[@text=&apos;LOGIN&apos;])
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -149,12 +139,23 @@ Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - &quot;&quot;
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to detect element: click_login (By.xpath: //android.widget.Button[@text=&apos;LOGIN&apos;])
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1391)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1345)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:493)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:481)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:472)
+	at com.qaprosoft.carina.demo.mobile.gui.pages.android.TataLogin.click_login(TataLogin.java:49)
+	at com.qaprosoft.carina.demo.cucumber.steps.TataAccountStepdef.Click_on_login_btn(TataAccountStepdef.java:44)
+	at ?.Then Click_on_login_btn(src/test/resources/features/tata.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;T440P&apos;, ip: &apos;192.168.216.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
+Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: 2deb34e7-21ef-4775-ba32-d9e..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: 2deb34e7-21ef-4775-ba32-d9e..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: aabe883e-391a-4f8d-b554-5fa2224b3206
+*** Element info: {Using=xpath, value=//android.widget.Button[@text=&apos;LOGIN&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -165,42 +166,73 @@ Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at io.appium.java_client.android.$Proxy37.getTitle(Unknown Source)
-	at com.qaprosoft.carina.demo.utils.PerfEventHandler.afterClickOn(PerfEventHandler.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at com.sun.proxy.$Proxy36.afterClickOn(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement$1.doTap(ExtendedWebElement.java:1442)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1266)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1408)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1393)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.refindElement(ExtendedWebElement.java:383)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1388)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1345)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:493)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:481)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:472)
-	at com.qaprosoft.carina.demo.mobile.gui.pages.android.TataLogin.enter_userid(TataLogin.java:30)
-	at com.qaprosoft.carina.demo.cucumber.steps.TataAccountStepdef.Enter_userid(TataAccountStepdef.java:34)
-	at ?.Then Enter_userid(src/test/resources/features/tata.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace973123933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace973123933'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - &quot;&quot;
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;T440P&apos;, ip: &apos;192.168.216.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
+	at com.qaprosoft.carina.demo.mobile.gui.pages.android.TataLogin.click_login(TataLogin.java:49)
+	at com.qaprosoft.carina.demo.cucumber.steps.TataAccountStepdef.Click_on_login_btn(TataAccountStepdef.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace412375354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace412375354'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Unable to detect element: click_login (By.xpath: //android.widget.Button[@text=&apos;LOGIN&apos;])
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -228,12 +260,23 @@ Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - &quot;&quot;
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to detect element: click_login (By.xpath: //android.widget.Button[@text=&apos;LOGIN&apos;])
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1391)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1345)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:493)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:481)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:472)
+	at com.qaprosoft.carina.demo.mobile.gui.pages.android.TataLogin.click_login(TataLogin.java:49)
+	at com.qaprosoft.carina.demo.cucumber.steps.TataAccountStepdef.Click_on_login_btn(TataAccountStepdef.java:44)
+	at ?.Then Click_on_login_btn(src/test/resources/features/tata.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;T440P&apos;, ip: &apos;192.168.216.208&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: d10fbed5-7edd-457e-a046-caf..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
+Capabilities {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: 2deb34e7-21ef-4775-ba32-d9e..., databaseEnabled: false, desired: {appActivity: com.tatamotors.eguruhybrid...., appPackage: com.tatamotors.eguruhybrid, automationName: Uiautomator2, carinaTestRunId: 2deb34e7-21ef-4775-ba32-d9e..., deviceName: Moto, deviceType: phone, platformName: android, platformversion: 7.0, udid: ZY223LBBJ4}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223LBBJ4, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceType: phone, deviceUDID: ZY223LBBJ4, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 7.0, platformversion: 7.0, statBarHeight: 72, takesScreenshot: true, udid: ZY223LBBJ4, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: aabe883e-391a-4f8d-b554-5fa2224b3206
+*** Element info: {Using=xpath, value=//android.widget.Button[@text=&apos;LOGIN&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -244,37 +287,73 @@ Session ID: c91d90f1-6104-4887-ac2b-012c40a31648
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at io.appium.java_client.android.$Proxy37.getTitle(Unknown Source)
-	at com.qaprosoft.carina.demo.utils.PerfEventHandler.afterClickOn(PerfEventHandler.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at com.sun.proxy.$Proxy36.afterClickOn(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement$1.doTap(ExtendedWebElement.java:1442)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1266)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1408)
-	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1393)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.refindElement(ExtendedWebElement.java:383)
+	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1388)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1345)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:493)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:481)
 	at com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:472)
-	at com.qaprosoft.carina.demo.mobile.gui.pages.android.TataLogin.enter_userid(TataLogin.java:30)
-	at com.qaprosoft.carina.demo.cucumber.steps.TataAccountStepdef.Enter_userid(TataAccountStepdef.java:34)
-	at ?.Then Enter_userid(src/test/resources/features/tata.feature:5)
+	at com.qaprosoft.carina.demo.mobile.gui.pages.android.TataLogin.click_login(TataLogin.java:49)
+	at com.qaprosoft.carina.demo.cucumber.steps.TataAccountStepdef.Click_on_login_btn(TataAccountStepdef.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner.feature(CucumberRunner.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>71</td>
+<td>101</td>
 <td>com.qaprosoft.carina.demo.TataAccountTest@4bc222e</td></tr>
 </table><p>
 </body>
